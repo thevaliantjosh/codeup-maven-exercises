@@ -40,7 +40,20 @@ public class MyFirstTest {
         assertArrayEquals(numbers, otherNumbers);
     }
 
+    @Test
+    public void testAStringForCharacters(){
+        String language = "PHP";
+//        boolean containsAnH = language.contains("H");
+//        boolean containsJ = language.contains("J");
+//
+//        assertTrue("The String \"PHP\" contains an \"H\"", containsAnH);
+//        assertFalse("The String \"PHP\" Does not contain a \"J\"", containsJ);
 
+        assertTrue("The String \"PHP\" contains an \"H\"", language.contains("H"));
+        assertFalse("The String \"PHP\" Does not contain a \"J\"", language.contains("J"));
+
+//        assertTrue("The String \"PHP\" Does not contain a \"J\"", containsJ);
+    }
 
     @Test
     public void testIfLanguagesAreDifferent(){
